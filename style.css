@@ -1,11 +1,31 @@
+@font-face {
+  font-family: "Fira Sans Regular";
+  src: url(fonts/Fira_Sans/FiraSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+  font-family: "Fira Sans Regular";
+}
+
 .main-text {
-  font-family: Arial;
+  font-family: "Inter";
+}
+
+.sub-text {
+  color: #eeeeee99;
+  font-family: "Inter";
 }
 
 .theme-dark {
   background-color: #181818;
   color: #fffff0
 }
+
 .theme-light {
   background-color: #FFFFF0;
   color: #181618;
@@ -20,6 +40,30 @@
 
 .text-danger {
   color: #FF0800;
+}
+
+.text-yellow {
+  color: #ddca00;
+}
+
+.text-violet {
+  color:violet;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.strike {
+  text-decoration: line-through;
 }
 
 .bg-success {
@@ -43,6 +87,15 @@
   background-color: #E3263620;
 }
 
+.theme-slick-dark {
+  color: #eeeeee;
+  background-color: #000018;
+}
+.theme-slick-light {
+  color: #080808;
+  background-color: #ededed;
+}
+
 .header {
   display: flex;
   border: 0.5px solid;
@@ -62,9 +115,18 @@
   text-align: center;
 }
 
-blockquote {
+.bquote {
   display: table;
   padding: 1rem;
   background-color: #FFFDD0;
+  border: 0.89px solid #FFFA90;
+  border-radius: 0.85px;
 }
-} 
+
+.bquote-dark {
+  display: table;
+  padding: 1rem;
+  background-color: #38383850;
+  border: 0.89px solid #48484850;
+  border-radius: 0.85px;
+}
